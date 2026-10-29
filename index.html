@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Recorrido virtual por las 11 salas de la Casa de Montalvo en Ambato, Ecuador.">
+<title>Casa de Montalvo | Recorrido Virtual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#063e32;--green2:#0b6951;--gold:#d8b36b;--cream:#f8f5ee;--ink:#17352e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}header{background:var(--green);color:white}.top{max-width:1150px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.brand{font-family:Cinzel,serif;font-weight:700;letter-spacing:1px;color:var(--gold);font-size:19px;text-decoration:none}nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}nav a:hover{color:var(--gold)}.hero{background:radial-gradient(circle at 80% 25%,#14715a 0%,#063e32 57%,#032d26 100%);text-align:center;padding:95px 20px 100px;color:white;border-bottom:6px solid var(--gold)}.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:12px;color:var(--gold);font-weight:700}.hero h1{font-family:Cinzel,Georgia,serif;font-size:clamp(42px,7vw,86px);line-height:1.1;letter-spacing:2px;margin:22px 0;text-shadow:0 5px 20px #001b1666}.ornament{color:var(--gold);font-size:28px;letter-spacing:12px}.hero p{max-width:620px;margin:22px auto 32px;line-height:1.8;font-size:18px;color:#e6f0eb}.cta{display:inline-block;background:var(--gold);color:#17352e;text-decoration:none;padding:15px 27px;border-radius:3px;font-weight:700}.container{max-width:1150px;margin:auto;padding:65px 24px}.section-heading{text-align:center;margin-bottom:36px}.section-heading h2{font-family:Cinzel,serif;font-size:clamp(26px,4vw,42px);margin:10px 0}.section-heading p{color:#5e6c65}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}.room{background:white;border:1px solid #e8e2d6;border-radius:10px;overflow:hidden;box-shadow:0 8px 25px #12392c0b;transition:transform .2s}.room:hover{transform:translateY(-4px)}.video-wrap{aspect-ratio:16/9;background:linear-gradient(135deg,#0b4035,#092b25);display:grid;place-items:center;position:relative}.placeholder{text-align:center;color:#e8f0eb;padding:18px}.placeholder .play{font-size:37px;color:var(--gold);display:block;margin-bottom:10px}.placeholder small{font-size:13px;color:#c5d8d0}.video-wrap video{width:100%;height:100%;object-fit:contain;background:#000}.room-content{padding:23px}.room-content .number{color:#a37c36;letter-spacing:2px;font-size:11px;font-weight:700}.room h3{font-family:Cinzel,serif;font-size:23px;margin:9px 0}.room p{color:#65716b;line-height:1.6;margin:0}.about{background:#eaece4;border-top:1px solid #dce0d5}.about p{max-width:750px;line-height:1.8;margin:0 auto;text-align:center}footer{background:#062f28;color:#d6e3db;text-align:center;padding:34px 20px;font-size:14px}footer strong{color:var(--gold)}@media(max-width:600px){nav a{margin-left:10px}.hero{padding:75px 18px}.top{justify-content:center}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><div class="top"><a class="brand" href="#inicio">CASA DE MONTALVO</a><nav><a href="#inicio">Inicio</a><a href="#salas">Las 11 salas</a><a href="#acerca">Acerca del proyecto</a></nav></div></header>
+<section class="hero" id="inicio"><div class="eyebrow">Ambato · Tungurahua · Ecuador</div><h1>Casa de<br>Montalvo</h1><div class="ornament">✦ ─ ✦</div><p>Un recorrido virtual por la historia, la cultura y el legado de Juan Montalvo. Descubre cada espacio del museo a través de sus 11 salas.</p><a class="cta" href="#salas">Explorar las salas ↓</a></section>
+<main class="container" id="salas"><div class="section-heading"><div class="eyebrow">Recorrido virtual</div><h2>Descubre nuestras 11 salas</h2><p>Selecciona una sala y reproduce su video cuando esté disponible.</p></div><div class="grid" id="rooms"></div></main>
+<section class="about" id="acerca"><div class="container"><div class="section-heading"><div class="eyebrow">Nuestro proyecto</div><h2>Historia y tecnología</h2></div><p>Esta experiencia digital busca acercar el patrimonio cultural de la Casa de Montalvo a más visitantes. Proyecto académico de la Carrera de Ingeniería en Telecomunicaciones de la Universidad Técnica de Ambato (UTA).</p></div></section>
+<footer><strong>Casa de Montalvo</strong><p>Ambato, Tungurahua, Ecuador</p><p>Carrera de Ingeniería en Telecomunicaciones · UTA</p></footer>
+<script>
+// Para activar un video: sube, por ejemplo, sala1.mp4 a la carpeta videos y cambia video: '' por video: 'videos/sala1.mp4'.
+const salas = [
+{numero:1,descripcion:'Conoce la historia y los detalles de esta sala.',video:''},
+{numero:2,descripcion:'Descubre los elementos y relatos de este espacio.',video:''},
+{numero:3,descripcion:'Explora el patrimonio conservado en esta sala.',video:''},
+{numero:4,descripcion:'Un nuevo espacio para conocer el museo.',video:''},
+{numero:5,descripcion:'Acércate a la historia de esta sala.',video:''},
+{numero:6,descripcion:'Conoce los detalles de este ambiente.',video:''},
+{numero:7,descripcion:'Descubre lo que guarda este espacio.',video:''},
+{numero:8,descripcion:'Recorre esta parte de la Casa de Montalvo.',video:''},
+{numero:9,descripcion:'Aprende más sobre este espacio del museo.',video:''},
+{numero:10,descripcion:'Continúa tu recorrido por el patrimonio cultural.',video:''},
+{numero:11,descripcion:'Completa tu recorrido por las salas del museo.',video:''}
+];
+const root=document.getElementById('rooms');
+salas.forEach(s=>{const card=document.createElement('article');card.className='room';const media=document.createElement('div');media.className='video-wrap';if(s.video){const v=document.createElement('video');v.controls=true;v.preload='metadata';v.playsInline=true;const source=document.createElement('source');source.src=s.video;source.type='video/mp4';v.appendChild(source);v.append('Tu navegador no admite videos HTML5.');media.appendChild(v)}else{media.innerHTML='<div class="placeholder"><span class="play">▷</span><strong>Video en preparación</strong><br><small>Próximamente disponible</small></div>'}const content=document.createElement('div');content.className='room-content';const num=document.createElement('div');num.className='number';num.textContent='RECORRIDO · '+String(s.numero).padStart(2,'0');const h=document.createElement('h3');h.textContent='Sala '+s.numero;const p=document.createElement('p');p.textContent=s.descripcion;content.append(num,h,p);card.append(media,content);root.appendChild(card)});
+</script>
+</body></html>
